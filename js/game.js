@@ -10,14 +10,14 @@ const config = {
     arcade: {
       debug: true,
     },
-  }, 
+  },
 
   backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
 const game = new Phaser.Game(config);
 console.log(game);
