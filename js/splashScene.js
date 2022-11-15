@@ -9,25 +9,23 @@
  * This class is the Splash Scene.
  */
 
-
 class Splashscene extends Phaser.Scene {
-  
   constructor() {
-    super({ key: "splashScene"})
+    super({ key: "splashScene" });
   }
 
-/**
- * Can be defined on your own Scenes.
- * This method is called by the Scene Manager when the scene starts,
- *   before preload() and create() and create().
- * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
- */
+  /**
+   * Can be defined on your own Scenes.
+   * This method is called by the Scene Manager when the scene starts,
+   *   before preload() and create() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
+   */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff")
+    this.cameras.main.setBackgroundColor("ffffff");
   }
 
   preload() {
-  console.log("Splash Scene")
+    console.log("Splash Scene");
   }
 
   /**
@@ -37,7 +35,7 @@ class Splashscene extends Phaser.Scene {
    */
 
   create(data) {
-  //pass
+    //pass
   }
 
   /**
@@ -51,5 +49,4 @@ class Splashscene extends Phaser.Scene {
   }
 }
 
-export default Splashscene
-
+export default Splashscene;
