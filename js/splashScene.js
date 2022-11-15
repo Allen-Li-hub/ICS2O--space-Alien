@@ -9,7 +9,7 @@
  * This class is the Splash Scene.
  */
 
-class Splashscene extends Phaser.Scene {
+class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: "splashScene" });
   }
@@ -49,4 +49,4 @@ class Splashscene extends Phaser.Scene {
   }
 }
 
-export default Splashscene;
+export default SplashScene;
