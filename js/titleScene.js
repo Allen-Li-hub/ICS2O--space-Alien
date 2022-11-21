@@ -9,9 +9,8 @@
  * This class it the Title Scene.
  */
 class TitleScene extends Phaser.Scene {
-    
   constructor() {
-    super({ key: "titleScene"})
+    super({ key: "titleScene" });
   }
 
   /**
@@ -21,14 +20,14 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff")
+    this.cameras.main.setBackgroundColor("ffffff");
   }
 
   preload() {
-    console.log("Title Scene")
+    console.log("Title Scene");
   }
 
-/**
+  /**
    * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts,
    *   before preload() and create() and create().
@@ -48,4 +47,4 @@ class TitleScene extends Phaser.Scene {
   }
 }
 
-export default TitleScene
+export default TitleScene;
