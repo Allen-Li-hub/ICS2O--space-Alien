@@ -11,7 +11,7 @@
 
 class SplashScene extends Phaser.Scene {
   constructor() {
-    super({ key: "splashScene" })
+    super({ key: "splashScene" });
   }
 
   /**
