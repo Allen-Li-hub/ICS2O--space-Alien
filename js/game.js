@@ -10,9 +10,9 @@
  * scene import statements
  */
 
-import SplashScene from "./splashScene.js";
+import SplashScene from "./splashScene.js"
 
-const splashScene = new SplashScene();
+const splashScene = new SplashScene()
 
 const config = {
   type: Phaser.ATUO,
@@ -32,8 +32,8 @@ const config = {
   },
 };
 
-const game = new Phaser.Game(config);
+const game = new Phaser.Game(config)
 
-game.scene.add("splashScene", splashScene);
+game.scene.add("splashScene", splashScene)
 
-game.scene.start("splashScene");
+game.scene.start("splashScene")
