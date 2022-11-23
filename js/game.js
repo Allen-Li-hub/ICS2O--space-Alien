@@ -10,13 +10,13 @@
  * scene import statements
  */
 
-import SplashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
-import menuScene from "./titleScene.js"
+import SplashScene from "./splashScene.js";
+import TitleScene from "./titleScene.js";
+import menuScene from "./titleScene.js";
 
-const splashScene = new SplashScene()
-const titleScene = new TitleScene()
-const menuScene = new MenuScene()
+const splashScene = new SplashScene();
+const titleScene = new TitleScene();
+const menuScene = new MenuScene();
 
 const config = {
   type: Phaser.ATUO,
