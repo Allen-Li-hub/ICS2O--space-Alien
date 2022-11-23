@@ -10,15 +10,15 @@
  */
 class TitleScene extends Phaser.Scene {
   constructor() {
-    super({ key: "titleScene" })
+    super({ key: "titleScene" });
 
-    this.titleSceneBackgroundImage = null
-    this.titleSceneText = null
+    this.titleSceneBackgroundImage = null;
+    this.titleSceneText = null;
     this.titleSceneTextStyle = {
       font: "200px times",
       fill: "#fde4b9",
       align: "center",
-    }
+    };
   }
 
   /**
@@ -28,12 +28,15 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ff0000")
+    this.cameras.main.setBackgroundColor("ff0000");
   }
 
   preload() {
-    console.log("Title Scene")
-    this.preload.image("titleSceneBackground", "assets/aliens_screen_iamge.jpg")
+    console.log("Title Scene");
+    this.preload.image(
+      "titleSceneBackground",
+      "assets/aliens_screen_iamge.jpg"
+    );
   }
 
   /**
@@ -45,12 +48,16 @@ class TitleScene extends Phaser.Scene {
   create(data) {
     this.titleSceneBackgroundImage = this.add
       .sprite(0, 0, "titleSceneBackground")
-      .setScale(2.75)
-    this.titleSceneBackgroundImage.x = 1920 / 2
-    this.titleSceneBackgroundImage.y = 1080 / 2
+      .setScale(2.75);
+    this.titleSceneBackgroundImage.x = 1920 / 2;
+    this.titleSceneBackgroundImage.y = 1080 / 2;
 
-    this.titleSceneText = this.add
-      .text(1920 / 2, 1080 / 2 + 350, "Space Alien", this.titleSceneTextStyle)
+    this.titleSceneText = this.add.text(
+      1920 / 2,
+      1080 / 2 + 350,
+      "Space Alien",
+      this.titleSceneTextStyle
+    );
   }
 
   /**
@@ -63,4 +70,4 @@ class TitleScene extends Phaser.Scene {
   }
 }
 
-export default TitleScene
+export default TitleScene;
