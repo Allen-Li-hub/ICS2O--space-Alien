@@ -6,20 +6,12 @@
 // Created on: Nov 2022
 
 /**
- * This class it the Title Scene.
+ * This class it the Menu Scene.
  */
-class TitleScene extends Phaser.Scene {
-  constructor() {
-    super({ key: "titleScene" })
-
-    this.titleSceneBackgroundImage = null
-    this.titleSceneText = null
-    this.titleSceneTextStyle = {
-      font: "200px times",
-      fill: "#fde4b9",
-      align: "center",
+class MenuScene extends Phaser.Scene {
+    constructor() {
+      super({ key: "menuScene"})
     }
-  }
 
   /**
    * Can be defined on your own Scenes.
@@ -28,12 +20,11 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ff0000")
+    this.cameras.main.setBackgroundColor("ffffff")
   }
 
   preload() {
-    console.log("Title Scene")
-    this.preload.image("titleSceneBackground", "assets/aliens_screen_iamge.jpg")
+    console.log("Menu Scene")
   }
 
   /**
@@ -43,14 +34,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.titleSceneBackgroundImage = this.add
-      .sprite(0, 0, "titleSceneBackground")
-      .setScale(2.75)
-    this.titleSceneBackgroundImage.x = 1920 / 2
-    this.titleSceneBackgroundImage.y = 1080 / 2
-
-    this.titleSceneText = this.add
-      .text(1920 / 2, 1080 / 2 + 350, "Space Alien", this.titleSceneTextStyle)
+    //pass
   }
 
   /**
@@ -63,4 +47,4 @@ class TitleScene extends Phaser.Scene {
   }
 }
 
-export default TitleScene
+export default MenuScene
