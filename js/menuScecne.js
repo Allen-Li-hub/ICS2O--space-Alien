@@ -10,7 +10,7 @@
  */
 class MenuScene extends Phaser.Scene {
   constructor() {
-    super({ key: "menuScene" });
+    super({ key: "menuScene" })
   }
 
   /**
@@ -20,11 +20,11 @@ class MenuScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   init(data) {
-    this.cameras.main.setBackgroundColor("ffffff");
+    this.cameras.main.setBackgroundColor("ffffff")
   }
 
   preload() {
-    console.log("Menu Scene");
+    console.log("Menu Scene")
   }
 
   /**
@@ -47,4 +47,4 @@ class MenuScene extends Phaser.Scene {
   }
 }
 
-export default MenuScene;
+export default MenuScene
