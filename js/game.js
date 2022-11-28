@@ -12,7 +12,7 @@
 
 import SplashScene from "./splashScene.js"
 import TitleScene from "./titleScene.js"
-import menuScene from "./titleScene.js"
+import menuScene from "./menuScene.js"
 
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
