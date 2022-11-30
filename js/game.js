@@ -18,7 +18,7 @@ import GameScene from "./gameScene.js"
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
 const menuScene = new MenuScene()
-const GameScene = new GameScene()
+const gameScene = new GameScene()
 
 const config = {
   type: Phaser.ATUO,
