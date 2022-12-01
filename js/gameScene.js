@@ -23,7 +23,7 @@ class GameScene extends Phaser.Scene {
    *   before preload() and create() and create().
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  Infinity(data) {
+  init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
 
