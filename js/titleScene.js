@@ -52,7 +52,7 @@ class TitleScene extends Phaser.Scene {
     this.titleSceneText = this.add
       .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
       .setOrigin(0.5)
-  }
+  } 
 
   /**
    * This method is called once per game step while the scene is running.
@@ -60,7 +60,9 @@ class TitleScene extends Phaser.Scene {
    *  @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    //pass
+    if (time > 6000) {
+      this.scene.switch('menuScene')
+    }
   }
 }
 
