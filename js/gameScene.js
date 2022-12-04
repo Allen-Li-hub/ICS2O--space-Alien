@@ -13,7 +13,7 @@ class GameScene extends Phaser.Scene {
   /**
    * create an alien
    */
-  createAlien () {
+  createAlien() {
     const alienXLocation = Math.floor(Math.random() * 1920) + 1
     let alienXVelocity = Math.floor(Math.random() * 50) + 1
     alienXVelocity *= Math.round(Math.random()) ? 1 : -1
