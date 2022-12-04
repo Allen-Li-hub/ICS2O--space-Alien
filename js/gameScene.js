@@ -82,7 +82,11 @@ class GameScene extends Phaser.Scene {
       if (this.fireMissile === false) {
         // fire missile
         this.fireMissile = true
-        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, 'missile')
+        const aNewMissile = this.physics.add.sprite(
+          this.ship.x,
+          this.ship.y,
+          "missile"
+        )
         this.missileGroup.add(aNewMissile)
       }
     }
