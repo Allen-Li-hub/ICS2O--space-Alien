@@ -50,7 +50,6 @@ class GameScene extends Phaser.Scene {
     this.load.image("alien", "./assets/alien.png")
 
     this.load.audio("laser", "./assets/laser1.wav")
-
   }
 
   /**
