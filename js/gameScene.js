@@ -58,7 +58,7 @@ class GameScene extends Phaser.Scene {
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create (data) {
+  create(data) {
     this.background = this.add.image(0, 0, "starBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
@@ -70,13 +70,17 @@ class GameScene extends Phaser.Scene {
     this.alienGroup = this.add.group()
     this.createAlien()
 
-    this.physics.add.collider(this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
-      alienCollide.destroy()
-      missileCollide.destroy()
-      this.sound.play("explosion")
-      this.createAlien()
-      this.createAlien()
-    }.bind(this))
+    this.physics.add.collider(
+      this.missileGroup,
+      this.alienGroup,
+      function (missileCollide, alienCollide) {
+        alienCollide.destroy()
+        missileCollide.destroy()
+        this.sound.play("explosion")
+        this.createAlien()
+        this.createAlien()
+      }.bind(this)
+    )
   }
 
   /**
