@@ -30,7 +30,11 @@ class GameScene extends Phaser.Scene {
     this.fireMissile = false
     this.score = 0
     this.scoreText = null
-    this.scoreTextStyle = { font: "65px Arial", fill: "ffffff", align: "center"}
+    this.scoreTextStyle = {
+      font: "65px Arial",
+      fill: "ffffff",
+      align: "center",
+    }
   }
 
   /**
@@ -72,15 +76,19 @@ class GameScene extends Phaser.Scene {
     this.alienGroup = this.add.group()
     this.createAlien()
 
-    this.physics.add.collider(this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
-      alienCollide.destroy()
-      missileCollide.destroy()
-      this.sound.play("explosion")
-      this.score = this.score + 1
-      this.scoreText.setText('Score: ' + this.score.toString())
-      this.createAlien()
-      this.createAlien()
-    }.bind(this))
+    this.physics.add.collider(
+      this.missileGroup,
+      this.alienGroup,
+      function (missileCollide, alienCollide) {
+        alienCollide.destroy()
+        missileCollide.destroy()
+        this.sound.play("explosion")
+        this.score = this.score + 1
+        this.scoreText.setText("Score: " + this.score.toString())
+        this.createAlien()
+        this.createAlien()
+      }.bind(this)
+    )
   }
 
   /**
