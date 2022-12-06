@@ -65,22 +65,18 @@ class GameScene extends Phaser.Scene {
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create(data) {
+  create (data) {
     this.background = this.add.image(0, 0, "starBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
-    this.scoreText = this.add.text(
-      10,
-      10,
-      "score: " + this.score.toString(),
-      this.scoreTextStyle
-    )
+    this.scoreText = this.add.text(10, 10, "Score: " + this.score.toString(), this.scoreTextStyle)
 
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
     // create a group for the missiles
     this.missileGroup = this.physics.add.group()
 
+    // create a group for the aliens
     this.alienGroup = this.add.group()
     this.createAlien()
 
