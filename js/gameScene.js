@@ -112,7 +112,7 @@ class GameScene extends Phaser.Scene {
         this.sound.play("bomb")
         this.physics.pause()
         alienCollide.destroy()
-        shipCollide.distroy()
+        shipCollide.destroy()
         this.gameOverText = this.add
           .text(
             1920 / 2,
