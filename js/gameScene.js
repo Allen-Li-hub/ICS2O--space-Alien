@@ -33,12 +33,12 @@ class GameScene extends Phaser.Scene {
     this.scoreText = null
     this.scoreTextStyle = {
       font: "65px Arial",
-      fill: "ffffff",
+      fill: "#ffffff",
       align: "center",
     }
     this.gameOverTextStyle = {
       font: "65px Arial",
-      fill: "ff0000",
+      fill: "#ff0000",
       align: "center",
     }
   }
